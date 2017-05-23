@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+/*COMENTARIOS*/
+/*Bienvenidos a JavaScript*/
+
+/* DECLARACIONES  */ 
+var a=1;/* son variables temporales y seran visibles desde fuera de esa sentencia*/
+{
+	var c=3
+}
+document.write(a,c)
+
+let b=8;/*controla mejor su propagacion, evita que una variable sea visible cuando no debe como ocurre en var*/
+{
+	let e=2; 
+}
+document.write(b,e)// ReferenceError: c is not defined
+
+const x=20; //nadie prodra modificarla posteriomente, no variara el propio valor.
+console.log(x) //20
+
+x=1;
+console.log(x)//20
+// No cambia el valor de x
+
+/*TIPOS DE DATOS*/
+var x;               // undefined
+var x = 5;           // Number
+var x = "John";      // String
+var x = {firstName:"John", lastName:"Doe"};    // Object
+var b = null;        //null
+var y = 123e5;       // 12300000
+var z = 123e-5;      // 0.00123
+var x = true;        //boolean
+var y = false;       //boolean
+
+/*CONVERSION DE DATOS*/
+
+
+/*LITERALES*/
+
+/* ARRAY */
+var nombres = ["Alexa", "David", "Erika"];//dentro de los [] se escribe lo que se desee
+
+/*BOOLEAN*/
+Boolean(10 > 9) //return true
+
+/*INTEGERS*/
+var INTEGERS = 1234567890// entero, tiene un maximo de 10 numeros
+
+/*FLOTANTES*/
+var FLOTANTES= 10,6;// float, es un numero decimal
+
+/*OBJETOS*/
+var abc = new Object();// declara un nuevo objeto
+
+/*RegExp*/
+var reg= /javascript/;
+"hola javascript".match(reg);//devuelve un array de 1 elemento ["javascript"], indicando que si existe esa cadena dentro del texto
+
+"bye".match(reg)
+
+/*STRING*/
+var nombres = "Alexa";
+var apellidos = 'Aguilar';
+
+
+</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

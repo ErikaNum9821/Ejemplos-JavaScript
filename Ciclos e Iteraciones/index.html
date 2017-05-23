@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	
+/*FOR*/
+for (var i =0; i <= 5; i++) {
+	document.write("<br/>estos son los numeros"+[i]);
+}
+
+
+document.write('<br>')
+document.write('<br>')
+
+/*WHILE*/
+var x;
+  x=1;
+  while (x<=20)
+  {
+    document.write(x);
+    document.write('<br>');
+    x=x+1;
+  }
+
+/*DO...WHILE*/
+  var detener = 1;
+  var det = parseInt(detener);
+do {
+    valor=prompt('Ingrese un valor entre 0 y 999:','');
+    val=parseInt(valor);
+    document.write('El valor '+val+' tiene ');
+    if (val<10)
+    {
+      document.write('Tiene 1 digitos');
+      det = 0;
+    }
+    else
+    {
+      if (val<100)
+      {
+        document.write('Tiene 2 digitos');
+        det = 0;
+      }
+      else
+      {
+        document.write('Tiene 3 digitos');
+        det = 0;
+      }
+    }
+   document.write('<br>');
+
+
+  } while(det == 1);
+
+</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
